@@ -1,4 +1,4 @@
 interface:
-  display_name: 'Plan My First A/B Test'
-  short_description: 'Turn a product idea into a practical A/B test plan'
-  default_prompt: 'Use $plan-first-ab-test to help me turn my idea into a first A/B test plan, explain the choices and identify what I need to resolve before launch.'
+  display_name: 'A/B Testing & CRO Coach'
+  short_description: 'Plan a credible A/B test and choose suitable methods'
+  default_prompt: 'Use $plan-first-ab-test to coach me through my experiment: check feasibility, choose suitable statistical methods, and prepare the plan, implementation checks or readout I need next.'

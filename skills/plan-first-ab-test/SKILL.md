@@ -1,18 +1,20 @@
 ---
 name: plan-first-ab-test
-description: Help a founder, new product manager or first testing team turn a product idea into a practical A/B test plan. Use when someone asks how to run their first test, choose a success metric, check traffic and duration, or prepare an experiment brief. Works from an idea, page, screenshot or description without an analytics integration.
+description: Coach founders, startup teams, product managers and developers through a first A/B test or split test. Use for CRO experiment planning, traffic and sample-size feasibility, MDE, statistical method selection, assignment and tracking QA, or reviewing an experiment result. Works from an idea, page, screenshot or description without analytics integration. Includes a narrow binary-outcome planning calculator; other statistical designs need matching methods and tools.
 license: MIT
 metadata:
   author: Atticus Li
-  version: '0.1.0'
+  version: '0.2.0'
   website: https://atticusli.com/learn/ab-testing/
 ---
 
-# Plan My First A/B Test
+# A/B Testing & CRO Coach
 
 Help the user answer: **“I think this change could help. How do I find out?”**
 
 Produce one understandable experiment plan, or a useful next learning step when a test is not practical. Teach through the user's actual idea. Explain the reason for each important choice in a sentence; introduce statistical terms only when they help the decision.
+
+Start at the user's actual stage: idea, feasibility, implementation or readout. A developer with an agreed plan needs implementation checks, not a fresh discovery interview. A team bringing results needs the original design and analysis context. Keep the stable invocation name `plan-first-ab-test`; this is one coaching skill, not an autonomous production operator or a universal statistics engine.
 
 ## Start with what the user has
 
@@ -34,6 +36,12 @@ Use follow-up questions only when their answers change the plan. Ask about the d
 - Identify eligibility and the assignment unit. A returning visit is not a new independent person. People in the same account can affect one another; account/cluster designs need an appropriate method rather than treating members as independent.
 
 For design and calculation boundaries, read [planning-method.md](references/planning-method.md) only when needed. Do not load every reference for a simple opening conversation.
+
+## Choose the statistical approach before calculating
+
+When asked which test or calculation to use, or when reviewing results, read [statistical-methods.md](references/statistical-methods.md). Route using the outcome type, independent assignment unit, allocation, monitoring rule and decision claim. Recommend a method with a short reason and name any missing inputs; do not merely refuse because the bundled calculator is narrow. Distinguish sample-size planning from estimating an effect and its uncertainty. Never convert revenue into conversion counts or treat repeated sessions as independent people to fit the helper.
+
+Use validated tools available in the current environment for supported calculations; show inputs, method and assumptions. If execution or a suitable method is unavailable, give the analysis specification and keep the numerical answer unresolved. Do not claim a calculated result from model arithmetic. Do not select one-sided tests, subgroups, exclusions or endpoints after seeing a favorable result. Bayesian methods also require a specified model, prior and decision rule; they do not remove design or data-quality requirements.
 
 ## Check whether the test can answer the question
 
@@ -66,6 +74,8 @@ Do not automatically prescribe heatmaps for low traffic. They also require obser
 Use [the brief template](assets/experiment-brief.md) as a guide, shortening it to the information available. Lead with the recommendation and one reason. Cover the question, control/treatment, audience, metric/guardrails, sample/calendar or blocker, setup checks, decision rule and one next action. Keep unknowns visible. Avoid arbitrary scores, invented observations, predicted lift percentages and long audits.
 
 Before a launch, the plan needs stable assignment, verified exposure/outcome tracking and an owner. Compare allocation with expectations and investigate sample-ratio mismatch before interpreting lift. Check errors and rollback behavior. Match stopping to the selected analysis method: do not repeatedly check a fixed-horizon p-value and stop at its first favorable crossing. Distinguish operational harm monitoring from efficacy monitoring.
+
+For an implementation request, read [developer-handoff.md](references/developer-handoff.md). Adapt it to the existing stack; do not require a new SDK or provider. Keep code and QA drafts reviewable and distinguish checks actually executed from checks proposed.
 
 Agree how the team will handle useful benefit, harm and an inconclusive result. Non-significance does not prove equivalence. For an existing running test or results pasted into the conversation, identify the original plan and method; do not silently apply this planning helper as a results analyzer.
 

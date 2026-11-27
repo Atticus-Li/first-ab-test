@@ -26,5 +26,21 @@
   {
     "id": "existing-result",
     "request": "I already ran a test: control 500/10000, treatment 530/10000. The dashboard says +6% relative lift. I checked it daily and stopped as soon as the chart looked good. Can I call this a win and ship?"
+  },
+  {
+    "id": "pm-revenue-method",
+    "request": "I am a startup PM testing a pricing page. Our goal is 30-day revenue per eligible new user, including people who never pay. Control had 200 purchases and treatment 240, but I also have pseudonymous user-level 30-day revenue rows. We randomized independent users 50/50 and have not launched yet; those counts are a synthetic planning example. Which statistical calculation should we plan, and what data do you need? I want to avoid buying an analytics product."
+  },
+  {
+    "id": "developer-shared-account",
+    "request": "I am implementing a shared workspace dashboard experiment. My PM already chose workspace renewal within 30 days as the primary metric. There are 300 workspaces and 25000 sessions per week; teammates see the same dashboard. Give me an assignment and event-tracking specification and staging QA checks. We have a backend logger already. Do not deploy or add an SDK."
+  },
+  {
+    "id": "multi-variant-endpoint",
+    "request": "We have four landing-page variants plus the control and want to compare every variant with control on signup, activation and paid conversion, then announce whichever comparison has p<0.05. We can only run one month. How should we choose the statistical method and sample size?"
+  },
+  {
+    "id": "business-margin-readout",
+    "request": "At our precommitted fixed endpoint, a valid analysis reports signup up 0.6 percentage points with a 95% interval from +0.1 to +1.1 points; our agreed smallest worthwhile gain is +1 point and guardrails are fine. Our plan was powered for +1 point versus zero. Does significance prove the required benefit? Please advise the PM; do not recompute this supplied interval."
   }
 ]
