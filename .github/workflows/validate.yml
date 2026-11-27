@@ -6,7 +6,8 @@ permissions:
   contents: read
 jobs:
   planner:
-    runs-on: ubuntu-latest
+    # Keep the Python 3.9 compatibility check on an image with published binaries.
+    runs-on: ubuntu-22.04
     strategy:
       matrix:
         python: ['3.9', '3.11', '3.13']
