@@ -1,0 +1,2 @@
+# Validation only. The skill's calculation helper has no package dependencies.
+PyYAML==6.0.3

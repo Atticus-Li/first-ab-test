@@ -1,0 +1,30 @@
+[
+  {
+    "id": "idea-only",
+    "request": "We are a two-person SaaS startup. I think shortening our signup form could help. I have never run an A/B test. Help me plan one. I don't know our conversion rate and don't want to connect any analytics tools."
+  },
+  {
+    "id": "small-audience",
+    "request": "Our landing page gets 80 new eligible people a week, with about four completing signup in that same weekly cohort after a seven-day follow-up. These are independent people, not repeat sessions. We want to know if removing an optional field improves signup by 20% relative. We need the decision in three weeks. We have no heatmap software and cannot add tools. Help us choose the next step."
+  },
+  {
+    "id": "planning-inputs",
+    "request": "We want to shorten signup from ten required fields to four. In our synthetic practice case, 500 of 10,000 new eligible independent people complete setup within seven days. We get 20,000 new eligible people each week, at stable traffic, and need a decision in four weeks. A 20% relative increase would justify shipping. We can assign people 50/50, with no account clustering. We have not checked tracking or rollback yet. Help me prepare a first-test plan."
+  },
+  {
+    "id": "sessions-and-missing-baseline",
+    "request": "We have 50,000 sessions a month across our entire site. I don't know how many people see the signup form or finish it. Assume an industry conversion rate of 3% and tell me whether we can detect a 10% improvement in two weeks. We do not want to connect a provider."
+  },
+  {
+    "id": "shared-workspaces",
+    "request": "Our product has 300 workspaces with several teammates each. We have 25,000 weekly sessions. We want to change the shared dashboard and test whether more workspaces renew. Teammates see and influence the same dashboard. Can we use the simple calculator to get our sample and launch schedule?"
+  },
+  {
+    "id": "broken-action",
+    "request": "I have reproduced a bug in staging: our mobile signup submit button is covered by an overlay, so it cannot be tapped. I was told every change must be A/B tested. We don't know traffic or baseline conversion. Help me decide what to do next."
+  },
+  {
+    "id": "existing-result",
+    "request": "I already ran a test: control 500/10000, treatment 530/10000. The dashboard says +6% relative lift. I checked it daily and stopped as soon as the chart looked good. Can I call this a win and ship?"
+  }
+]
