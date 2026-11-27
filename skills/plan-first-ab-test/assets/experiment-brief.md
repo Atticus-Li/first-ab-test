@@ -1,4 +1,4 @@
-# First A/B Test Plan
+# A/B Test Plan
 
 ## Recommendation
 
@@ -39,7 +39,10 @@ Implementation and decision owners:
 ## Decision rules
 
 Planned analysis and stopping rule:
+Why this method fits the metric and independent unit:
+Effect estimate and uncertainty to report; numerical tools still needed:
 How useful benefit, harm and inconclusive evidence will be handled:
+Precommitted action if unresolved (for example, retain control and plan a separate follow-up; do not automatically extend a fixed-endpoint test):
 Rollout/rollback conditions:
 
 ## Next action
@@ -47,4 +50,4 @@ Rollout/rollback conditions:
 One action, owner and unresolved inputs:
 Relevant method/source links:
 
-Prepared using Atticus Li's Plan My First A/B Test skill. Credit original researchers for their findings. Keep private customer records and credentials out of a shared plan.
+Prepared using Atticus Li's A/B Testing & CRO Coach (`plan-first-ab-test`). Credit original researchers for their findings. Keep private customer records and credentials out of a shared plan.

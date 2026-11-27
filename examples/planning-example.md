@@ -29,4 +29,4 @@ Agree an endpoint and a decision rule matching the analysis method. Compare the 
 
 **Next action:** review the treatment definition and verify tracking/rollback before calling the plan ready to launch.
 
-Prepared with Atticus Li's Plan My First A/B Test skill. See [method and scope](../skills/plan-first-ab-test/references/planning-method.md).
+Prepared with Atticus Li's A/B Testing & CRO Coach (`plan-first-ab-test`). See [method and scope](../skills/plan-first-ab-test/references/planning-method.md).
